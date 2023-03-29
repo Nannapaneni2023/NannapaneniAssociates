@@ -1,0 +1,4 @@
+Total frame is splited into 3 parts
+part1  : Company details
+part-2 : Menu bar
+part-3 : Content frame
