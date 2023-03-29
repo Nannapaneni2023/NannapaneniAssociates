@@ -1,0 +1,318 @@
+<!--Mainframe-->
+<html>
+<style>
+    /*Div-2 Attributes*/
+    .overlay 
+    {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content 
+    {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a 
+    {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus 
+    {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn 
+    {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) 
+    {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn 
+        {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+    }
+    /*Div-1 Attributes*/
+    button
+    {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: x-large;
+        background: none;
+        border: none;
+    }
+    p
+    {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: xx-large;
+    }
+    #il
+    {
+        display: inline-block;
+        width: 79%;
+        color: white;
+        margin-bottom: 1%;
+    }
+    #ir
+    {
+        display: inline-block;
+        width: 20%;
+        border-left: 1px solid grey;
+        color: white;
+        margin-bottom: 1%;
+    }
+    #im1
+    {
+        margin-bottom: -3%;
+    }
+    /*Div-3 attributes*/
+    #di3
+    {
+        height: 50%;
+        width: 100%;
+        border: none;
+    }
+    /*Last div*/
+    #last
+    {
+        color: white;
+        background-color: black;
+        height: 70%;
+        width: 100%;
+        font-size: larger;
+    }
+    #ls1
+    {
+        margin-top: -6%;
+        height: 70%;
+        width: 32%;
+        display: inline-block;
+        text-indent: 40%;
+    }
+    #ls2
+    {
+        margin-top: -6%;
+        height: 70%;
+        width: 32%;
+        display: inline-block;
+        text-align: center;
+    }
+    #ls3
+    {
+        margin-top: -6%;
+        height: 70%;
+        width: 32%;
+        display: inline-block;
+    }
+    #ps1
+    {
+        white-space: pre;
+        font-size: large;
+        color:grey;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+    }
+    #lst
+    {
+        font-size:small;
+        text-indent: 5%;
+        color: grey;
+        font-weight:700;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+</style>
+<script>
+    function openNav() 
+    {
+        document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() 
+    {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+    //Image works
+    i=1;
+    function movepre()
+    {
+        i=i-1;
+        if(i<0)
+            i=3;
+            changeimages();
+    }
+    function movenext()
+    {
+        i=i+1;
+        if(i>3)
+            i=0;
+            changeimages();
+    }
+    function changeimages()
+    {
+        document.getElementById("backgr0").src=(i+0)+".jpg";
+        document.getElementById("backgr1").src=(i+1)+".jpg";
+        document.getElementById("backgr2").src=(i+2)+".jpg";
+    }
+    var prev;
+    var next;
+    function moveprecycle()
+    {
+        clearInterval(next);
+        prev = setInterval("movepre()","2000");
+    }
+    function movenextcycle()
+    {
+        clearInterval(prev);
+        next = setInterval("movenext()","2000");
+    }
+</script>
+<body>
+    <!--1st division-->
+    <div style="border-bottom: 4px solid silver; border-width: 80%; background-color: black;">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="Zarme.html">Home</a>
+                <a href="About us.html" target="mainframe" id="s1">About us</a><br>
+                <a href="Projects.html" target="mainframe" id="s1">Projects</a><br>
+                <a href="Contact.html" target="mainframe" id="s1">Contact</a><br>
+                <a href="Appointment.html" target="mainframe" id="s1">Apponiment</a>
+            </div>
+        </div>
+        <!--
+            *****************                                                                    ************************
+            |                                        Main content                                                       |
+            *****************                                                                    ************************
+        -->
+        <!--Left block-->
+        
+        <div id="il">
+            <p align="right" style="color: white;margin-right:25%;">NANAPANENI ASSOCIATES</p>
+        </div>
+
+        <!--Right block-->
+        <div id="ir">
+            <button class="openbtn" onclick="openNav()" id="bmenu" style="color:white">︙ Menu</button>
+        </div>
+
+        <!--
+            *****************                                                                    ************************
+            |                                        End of block                                                       |
+            *****************                                                                    ************************
+        -->
+    </div>
+
+    <!--2nd division-->
+    <div style="margin-top: 2%;">
+        <table style="width: 100%;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: x-large;">
+            <tr><td style="text-indent: 14%; width: 20%;">SINCE - 1995
+                <td style="background-color: black;width: 50%;color: silver;text-align: center;">Vishvakarma of the era
+                <td style="text-align: right;white-space: pre;width: 20%;">Over 25 years of Excellency           </td>
+            </tr>
+        </table>
+        <img src="housersv4.jpg" alt="Nanapaeni" style="width: 100%;margin-top: 2%;" align="center">
+    </div>
+
+    <!--3rd division-->
+    <div style="border-top: 1px solid silver;border-bottom: 1px solid silver;">
+        <iframe name="mainframe" id="di3"></iframe>
+    </div>
+
+    <!--4th division-->
+    <div style="margin-bottom: 10%;background-color: #818181;">
+        <table style="height: 100%;width: 100%;">
+            <tr align="center">
+                <td style="width: 4%;"><button type="button" onclick="moveprecycle()"><<</button>
+                <td style="width: 20%;"><img src="1.jpg" id="backgr0" width="100%">
+                <td style="width: 50%;"><img src="2.jpg" id="backgr1" width="80%">
+                <td style="width: 20%;"><img src="3.jpg" id="backgr2" width="100%">
+                <td style="width: 4%;"><button type="button" onclick="movenextcycle()">>></button></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--
+        ***********************                                        **********************
+        |                                Final division                                     |
+        ***********************                                        **********************
+    -->
+    <div id="last">
+        <!--Division-1-->
+        <div id="ls1">
+
+            <p id="ps1">
+                            <label style="color: rgba(190, 22, 22, 0.775);text-decoration: underline;">HEADQUATERS</label><br><br>
+                            1<sup>st</sup>Floor, Flatno:2
+                            Kamalesh Grand
+                            Laxmipuram,
+                            Guntur - 522007
+                            Andhra pradesh
+
+
+
+            </p>
+        </div>
+        <!--Division-2-->
+        <div id="ls2">
+            <p id="ps1">
+
+
+
+
+
+        <label style="color: rgba(190, 22, 22, 0.775);text-decoration: underline;">LOCATION</label>
+
+        <a href="https://goo.gl/maps/xMCu7wUr6JUnzeBq9"target="_blank"><img src="planofloacality.png"></a>
+    
+
+            </p>
+        </div>
+        <!--Division-3-->
+        <div id="ls3">
+            <p id="ps1">
+
+            <label style="color: rgba(190, 22, 22, 0.775);text-decoration: underline;">INFO</label><br><br>
+            Phone : <u style="text-decoration: underline rgba(190, 22, 22, 0.775);">9440260002</u>
+            phone : <u style="text-decoration: underline rgba(190, 22, 22, 0.775);">9440859424</u>
+            Mail     : <u style="text-decoration: underline rgba(190, 22, 22, 0.775);">Nassoci1995@gmail.com</u>
+
+
+
+
+
+            </p>
+        </div>
+        <hr style="border: 0.2px solid darkgrey;width: 90%;">
+        <table style="width: 100%;">
+            <tr><td id="lst" style="text-indent: 14%;">©2023 Nanapaeni Asscociates
+                <td id="lst" style="text-align: right;white-space: pre;">Linkedin    Glassdoor                                   </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
