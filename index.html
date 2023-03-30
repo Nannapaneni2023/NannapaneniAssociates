@@ -1,12 +1,8 @@
 <!--Mainframe-->
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Nannapanei Associates">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Venkatasubbaiah Jakkampudi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nannapaneni Associates</title>
+</head>
 <style>
     /*Div-2 Attributes*/
     .overlay 
@@ -67,6 +63,14 @@
     }
 
     /*Div-1 Attributes*/
+    .div1
+    {
+        border-bottom: 4px solid silver; 
+        border-width: 80%; 
+        background-color: black;
+        font-weight: 700;
+        width: 100%;
+    }
     button
     {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -99,12 +103,65 @@
         margin-bottom: -3%;
     }
 
+    /*Division-2*/
+    .div2
+    {
+        margin-top: 2%;
+        font-weight: 700;
+    }
+    @keyframes rs
+    {
+        0% {opacity: 0.6;}
+        25% {opacity: 0.7;}
+        50% {opacity: 0.8;}
+        75% {opacity: 0.9;}
+        100% {opacity: 1.0;}
+    }
+    .vk1
+    {
+        background-color: black;
+        width: 50%;
+        color: silver;
+        text-align: center;
+        animation-name: rs;
+        transition: 1s;
+        animation-duration: 1s;
+        animation-direction:alternate;
+    }
+    .rickymikey
+    {
+        text-indent: 14%; 
+        width: 20%;
+        animation-name: rs;
+        transition: 1s;
+        animation-duration: 1s;
+        animation-direction:alternate;
+    }
+    .fishy
+    {
+        text-align: right;
+        white-space: pre;
+        width: 20%;
+        animation-name: rs;
+        transition: 1s;
+        animation-duration: 1s;
+        animation-direction:alternate;
+    }
+
     /*Div-3 attributes*/
     #di3
     {
         height: 50%;
         width: 100%;
         border: none;
+    }
+
+    /*Div-4*/
+    #di4
+    {
+        width: 100%;
+        margin-bottom: 10%;
+        background-color: #818181;
     }
     
     /*Last div*/
@@ -147,6 +204,14 @@
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 900;
     }
+    .client
+    {
+        opacity: 0.9;
+    }
+    .client:hover
+    {
+        opacity: 1;
+    }
     #lst
     {
         font-size:small;
@@ -155,14 +220,8 @@
         font-weight:700;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    /*@keyframes sri
-    {
-        0% {background: linear-gradient(135deg, deepskyblue 90%, silver 85%);}
-        25% {background: linear-gradient(135deg, rgb(0, 132, 255) 90%, rgb(222, 162, 127) 85%);}
-        50% {background: linear-gradient(135deg, rgb(140, 0, 255) 90%, rgb(223, 198, 149) 85%);}
-        75% {background: linear-gradient(135deg, rgba(255, 0, 242, 0.815) 90%, rgb(171, 235, 157) 85%);}
-        100% {background: linear-gradient(135deg, rgb(255, 0, 115) 90%, rgb(172, 237, 75) 85%);}
-    }*/
+
+    /*Scroll bar data*/
     ::-webkit-scrollbar
     {
         background-color: #818181;
@@ -177,7 +236,7 @@
         background: linear-gradient(135deg, pink 40%, lavenderblush 85%);
     }
 </style>
-</head>
+
 <script>
     function openNav() 
     {
@@ -223,60 +282,58 @@
         next = setInterval("movenext()","2000");
     }
 </script>
+
 <body>
     <!--1st division-->
-    <div style="border-bottom: 4px solid silver; border-width: 80%; background-color: black;">
+    <div class="div1">
+
+        <!--Menu block-->
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                <a href="index.html">Home</a>
+                <a href="Index.html">Home</a>
                 <a href="About us.html" target="mainframe" id="s1">About us</a><br>
                 <a href="Projects.html" target="mainframe" id="s1">Projects</a><br>
                 <a href="Contact.html" target="mainframe" id="s1">Contact</a><br>
                 <a href="Appointment.html" target="mainframe" id="s1">Apponiment</a>
             </div>
         </div>
-        <!--
-            *****************                                                                    ************************
-            |                                        Main content                                                       |
-            *****************                                                                    ************************
-        -->
+        <!--End of menu block-->
+
         <!--Left block-->
-        
         <div id="il">
             <p align="right" style="color: white;margin-right:25%;">NANAPANENI ASSOCIATES</p>
         </div>
+        <!--End of left block-->
 
         <!--Right block-->
         <div id="ir">
             <button class="openbtn" onclick="openNav()" id="bmenu" style="color:white">︙ Menu</button>
         </div>
-
-        <!--
-            *****************                                                                    ************************
-            |                                        End of block                                                       |
-            *****************                                                                    ************************
-        -->
+        <!--End of right block-->
     </div>
+    <!--End of 1st division-->
 
     <!--2nd division-->
     <div style="margin-top: 2%;">
         <table style="width: 100%;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: x-large;">
-            <tr><td style="text-indent: 14%; width: 20%;">SINCE - 1995
-                <td style="background-color: black;width: 50%;color: silver;text-align: center;">Vishvakarma of the era
-                <td style="text-align: right;white-space: pre;width: 20%;">Over 25 years of Excellency           </td>
+            <tr><td class="rickymikey">SINCE - 1995
+                <td class="vk1">Vishvakarma of the era
+                <td class="fishy">Over 25 years of Excellency           </td>
             </tr>
         </table>
         <img src="housersv4.jpg" alt="Nanapaeni" style="width: 100%;margin-top: 2%;" align="center">
     </div>
+    <!--End of 2nd division-->
 
     <!--3rd division-->
     <div style="border-top: 1px solid silver;border-bottom: 1px solid silver;">
         <iframe name="mainframe" id="di3"></iframe>
     </div>
+    <!--End of 3rd division-->
 
     <!--4th division-->
-    <div style="margin-bottom: 10%;background-color: #818181;">
+    <div id="di4">
         <table style="height: 100%;width: 100%;">
             <tr align="center">
                 <td style="width: 4%;"><button type="button" onclick="moveprecycle()"><<</button>
@@ -287,12 +344,9 @@
             </tr>
         </table>
     </div>
+    <!--End of 4th division-->
 
-    <!--
-        ***********************                                        **********************
-        |                                Final division                                     |
-        ***********************                                        **********************
-    -->
+    <!--Last block-->
     <div id="last">
         <!--Division-1-->
         <div id="ls1">
@@ -309,6 +363,8 @@
 
             </p>
         </div>
+        <!--End of 1st division-->
+
         <!--Division-2-->
         <div id="ls2">
             <p id="ps1">
@@ -319,11 +375,13 @@
 
         <label style="color: rgba(190, 22, 22, 0.775);text-decoration: underline;">LOCATION</label>
 
-        <a href="https://goo.gl/maps/xMCu7wUr6JUnzeBq9"target="_blank"><img src="planofloacality.png"></a>
+        <a href="https://goo.gl/maps/xMCu7wUr6JUnzeBq9"target="_blank"><img src="planofloacality.png" class="client"></a>
     
 
             </p>
         </div>
+        <!--End of the 2nd division-->
+
         <!--Division-3-->
         <div id="ls3">
             <p id="ps1">
@@ -339,6 +397,7 @@
 
             </p>
         </div>
+        <!--End of the 3rd division-->
         <hr style="border: 0.2px solid darkgrey;width: 90%;">
         <table style="width: 100%;">
             <tr><td id="lst" style="text-indent: 14%;">©2023 Nanapaeni Asscociates
