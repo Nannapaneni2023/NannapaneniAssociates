@@ -160,8 +160,10 @@
     #di4
     {
         width: 100%;
+        margin-top: 4%;
         margin-bottom: 10%;
-        background-color: #818181;
+        color:whitesmoke;
+        background-color: whitesmoke;
     }
     
     /*Last div*/
@@ -218,6 +220,11 @@
         transition: 1s;
         color: red;
     }
+    .lal
+    {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
     .lal:hover
     {
         background: linear-gradient(135deg, deepskyblue 40%, silver 85%);
@@ -255,12 +262,26 @@
     }
     .zx1
     {
-        opacity: 0.75;
+        margin-top: 2vw;
+        opacity: 1;
     }
     .zx1:hover
     {
-        opacity: 1;
+        box-shadow: 0.2vw 0.2vw  black;
     }
+    .zx2
+    {
+        margin-top: 2vw;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    .zx2:hover
+    {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        box-shadow: 0.2vw 0.2vw black;
+    }
+
 
     /*Scroll bar data*/
     ::-webkit-scrollbar
