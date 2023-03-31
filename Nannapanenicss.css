@@ -217,8 +217,7 @@
     }
     .lae:hover
     {
-        background-color: #818181;
-        border-radius: 60%;
+        color: red;
     }
     .lal:hover
     {
