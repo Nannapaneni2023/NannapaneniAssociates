@@ -223,6 +223,11 @@
     {
         color: red;
     }
+    .lal:hover
+    {
+        background: linear-gradient(135deg, deepskyblue 40%, silver 85%);
+        border-radius: 60%;
+    }
     .rs2
     {
         text-decoration: none;
@@ -247,6 +252,14 @@
         color: grey;
         font-weight:700;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .zx1
+    {
+        opacity: 0.75;
+    }
+    .zx1:hover
+    {
+        opacity: 1;
     }
 
     /*Scroll bar data*/
@@ -364,11 +377,11 @@
     <div id="di4">
         <table style="height: 100%;width: 100%;">
             <tr align="center">
-                <td style="width: 4%;"><button type="button" onclick="moveprecycle()"><<</button>
-                <td style="width: 15%;"><img src="1.jpg" id="backgr0" width="100%">
+                <td style="width: 9%; font-weight: 900;"><button type="button" onclick="moveprecycle()"><img src="left.png" class="lal"></button>
+                <td style="width: 10%;"><img src="1.jpg" id="backgr0" width="100%" class="zx1">
                 <td style="width: 60%;"><img src="2.jpg" id="backgr1" width="90%">
-                <td style="width: 15%;"><img src="3.jpg" id="backgr2" width="100%">
-                <td style="width: 4%;"><button type="button" onclick="movenextcycle()">>></button></td>
+                <td style="width: 10%;"><img src="3.jpg" id="backgr2" width="100%" class="zx1">
+                <td style="width: 9%;"><button type="button" onclick="movenextcycle()"><img src="right.png" class="lal"></button></td>
             </tr>
         </table>
     </div>
