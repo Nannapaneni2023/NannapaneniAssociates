@@ -217,12 +217,14 @@
     }
     .lae:hover
     {
-        color: red;
+        background-color: #818181;
+        border-radius: 60%;
     }
     .lal:hover
     {
         background: linear-gradient(135deg, deepskyblue 40%, silver 85%);
         border-radius: 60%;
+        transition: 1s;
     }
     .rs2
     {
