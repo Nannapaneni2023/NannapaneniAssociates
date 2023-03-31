@@ -148,23 +148,51 @@
         animation-direction:alternate;
     }
 
-    /*Div-3 attributes*/
+    /*Div-3*/
     #di3
-    {
-        height: 50%;
-        width: 100%;
-        border: none;
-    }
-
-    /*Div-4*/
-    #di4
     {
         width: 100%;
         margin-top: 4%;
         margin-bottom: 10%;
         color:whitesmoke;
-        background-color: whitesmoke;
     }
+    .rup1
+    {
+        height: 50%;
+        width: 100%;
+        border-top:1px solid grey;
+        border-bottom: 1px solid grey;
+    }
+    .rup2
+    {
+        height: 15%;
+        width: 100%;
+        border-bottom: 1px solid grey;
+    }
+    .zx1
+    {
+        margin-top: 1vw;
+        opacity: 1;
+        margin-bottom: 1vw;
+    }
+    .zx1:hover
+    {
+        box-shadow: 0.2vw 0.2vw  black;
+    }
+    .zx2
+    {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        -webkit-filter: grayscale(50%);
+        filter: grayscale(50%);
+    }
+    .zx2:hover
+    {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        box-shadow: 0.2vw 0.2vw black;
+    }
+    /*End of div-3*/
     
     /*Last div*/
     #last
@@ -259,27 +287,6 @@
     #lst:hover
     {
         color: white;
-    }
-    .zx1
-    {
-        margin-top: 2vw;
-        opacity: 1;
-    }
-    .zx1:hover
-    {
-        box-shadow: 0.2vw 0.2vw  black;
-    }
-    .zx2
-    {
-        margin-top: 2vw;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-    }
-    .zx2:hover
-    {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-        box-shadow: 0.2vw 0.2vw black;
     }
 
 
