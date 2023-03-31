@@ -16,7 +16,9 @@
     }
 
     //Image works
-    i=1;
+    var prev;
+    var next;
+    var i=1;
     function movepre()
     {
         i=i-1;
@@ -37,17 +39,20 @@
         document.getElementById("backgr1").src=(i+1)+".jpg";
         document.getElementById("backgr2").src=(i+2)+".jpg";
     }
-    var prev;
-    var next;
     function moveprecycle()
     {
-        clearInterval(next);
+        destroyer();
         prev = setInterval("movepre()","2000");
     }
     function movenextcycle()
     {
-        clearInterval(prev);
+        destroyer();
         next = setInterval("movenext()","2000");
+    }
+    function destroyer()
+    {
+        clearInterval(next);
+        clearInterval(prev);
     }
 </script>
 
@@ -108,6 +113,7 @@
             <tr align="center">
             <td style="width: 5%;" colspan="3">
                 <button type="button" onclick="moveprecycle()"><img src="left.png" class="lal"></button>
+                <button type="button" onclick="destroyer()">Pause</button>
                 <button type="button" onclick="movenextcycle()"><img src="right.png" class="lal"></button>
             </td></tr>
         </table>
