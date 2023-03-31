@@ -127,8 +127,6 @@
     .vk1:hover
     {
         color: white;
-        /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
-        font-weight: 800;
     }
     .rickymikey
     {
@@ -217,6 +215,7 @@
     }
     .lae:hover
     {
+        transition: 1s;
         color: red;
     }
     .lal:hover
