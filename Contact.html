@@ -1,22 +1,53 @@
-<!--Home page-->
+<!--Contact page-->
 <html>
-<style>
-    div
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="Nannapanenicss.css">
+</head>
+<script>
+    function openNav() 
     {
-        font-size:x-large;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: white;
-        background-color: black;
-        height: 100%;
-        width: 100%;
+        document.getElementById("myNav").style.width = "100%";
     }
-</style>
+    function closeNav() 
+    {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
 <body>
-        <div>
-        <u>Office Address</u><br>
-            Flatno:2,<br>
-            Kamalesh Grand Apratment<br>
-            Laxmipuram, Guntur - 522007
+    
+    <!--1st division-->
+    <div class="div1">
+
+        <!--Menu block-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><label class="lae">&times;</label></a>
+            <div class="overlay-content">
+                <a href="Index.html"><label class="lae">Home</label></a>
+                <a href="About us.html" id="s1"><label class="lae">About us</label></a><br>
+                <a href="Projects.html" target="mainframe" id="s1"><label class="lae">Projects</label></a><br>
+                <a href="Contact.html" target="mainframe" id="s1"><label class="lae">Contact</label></a><br>
+                <a href="Appointment.html" id="s1"><label class="lae">Apponiment</label></a>
+            </div>
         </div>
+        <!--End of menu block-->
+
+        <!--Left block-->
+        <div id="il">
+            <p align="right" style="color: white;margin-right:25%;"><label class="lae">NANAPANENI ASSOCIATES</label></p>
+        </div>
+        <!--End of left block-->
+
+        <!--Right block-->
+        <div id="ir">
+            <button class="openbtn" onclick="openNav()" id="bmenu" style="color:white"><label class="lae">︙ Menu</label></button>
+        </div>
+        <!--End of right block-->
+    </div>
+    <!--End of 1st division-->
+    <div>
+    Contact<br>
+    Work In Progress !
+    </div>
 </body>
 </html>
