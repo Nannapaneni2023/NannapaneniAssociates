@@ -203,7 +203,7 @@
         width: 32%;
         display: inline-block;
     }
-    #ps1
+    .ps1
     {
         white-space: pre;
         font-size: large;
@@ -211,9 +211,27 @@
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 900;
     }
-    strong:hover
+    .ps1:hover
+    {
+        color: white;
+    }
+    .ps1.lae
+    {
+        color: rgba(190, 22, 22, 0.775);
+        text-decoration: underline;
+    }
+    .lae:hover
+    {
+        color: red;
+    }
+    .rs2
+    {
+        text-decoration: none;
+    }
+    .rs2:hover
     {
         text-decoration: underline rgba(190, 22, 22, 0.775);
+        color: red;
     }
     .client
     {
@@ -329,7 +347,7 @@
     <div style="margin-top: 2%;">
         <table style="width: 100%;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: x-large;">
             <tr><td class="rickymikey">SINCE - 1995
-                <td class="vk1">Vishvakarma of the era
+                <td class="vk1"><label class="lae">Vishvakarma of the era</label>
                 <td class="fishy">Over 25 years of Excellency           </td>
             </tr>
         </table>
@@ -362,8 +380,8 @@
         <!--Division-1-->
         <div id="ls1">
 
-            <p id="ps1">
-                            <label style="color: rgba(190, 22, 22, 0.775);text-decoration: underline;">HEADQUATERS</label><br><br>
+            <p class="ps1"><strong class="rs1">
+                            <label class="lae">HEADQUATERS</label><br><br>
                             1<sup>st</sup>Floor, Flatno:2
                             Kamalesh Grand
                             Laxmipuram,
@@ -372,19 +390,19 @@
 
 
 
-            </p>
+            </strong></p>
         </div>
         <!--End of 1st division-->
 
         <!--Division-2-->
         <div id="ls2">
-            <p id="ps1">
+            <p class="ps1">
 
 
 
 
 
-        <label style="color: rgba(190, 22, 22, 0.775);text-decoration: underline;">LOCATION</label>
+        <label class="lae">LOCATION</label>
 
         <a href="https://goo.gl/maps/xMCu7wUr6JUnzeBq9"target="_blank"><img src="planofloacality.png" class="client"></a>
     
@@ -395,12 +413,12 @@
 
         <!--Division-3-->
         <div id="ls3">
-            <p id="ps1">
+            <p class="ps1">
 
-            <label style="color: rgba(190, 22, 22, 0.775);text-decoration: underline;">INFO</label><br><br>
-            Phone : <strong>9440260002</strong>
-            phone : <strong>9440859424</strong>
-            Mail     : <strong>Nassoci1995@gmail.com</strong>
+            <label class="lae">INFO</label><br><br>
+            Phone : <strong class="rs2">9440260002</strong>
+            phone : <strong class="rs2">9440859424</strong>
+            Mail     : <strong class="rs2">Nassoci1995@gmail.com</strong>
 
 
 
