@@ -112,13 +112,13 @@
 
     <div  style="height:90%">
         <center>
-            <form method="post">
+            <form method="post" action="workit.php" enctype="multipart/form-data">
             <table style="margin-top: 5%;">
                 <tr><th colspan="2" class="rfs">BOOK AN APPOINTMENT</th></tr>
                 <tr><td colspan="2" style="visibility: hidden;">Fill out the form</td></tr>
-                <tr><td class="trk1">Name<td class="trk2"><input type="text" id="nam" placeholder="Enter name" required></td></tr>
-                <tr><td class="trk1">Mobile<td class="trk2"><input type="number" id="num" min="1000000000" max="9999999999" placeholder="Enter mobile" required></td></tr>
-                <tr><td class="trk1">Mail id<td class="trk2"><input type="text" id="mail" placeholder="Ex: Swaroop@gmail.com" required></td></tr>
+                <tr><td class="trk1">Name<td class="trk2"><input type="text" name="nam" id="nam" placeholder="Enter name" required></td></tr>
+                <tr><td class="trk1">Mobile<td class="trk2"><input type="number" name="num" id="num" min="1000000000" max="9999999999" placeholder="Enter mobile" required></td></tr>
+                <tr><td class="trk1">Mail id<td class="trk2"><input type="text" name="mail" id="mail" placeholder="Ex: Swaroop@gmail.com" required></td></tr>
                 <tr><td colspan="2"><hr style="border: 0.2px solid darkgrey;width: 90%;"></td></tr>
                 <tr><td colspan="2" align="center">
                     <button type="reset" class="bu" style="margin-right: 38%;">Reset</button>
