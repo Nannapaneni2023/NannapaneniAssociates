@@ -202,18 +202,17 @@
     }
     @keyframes fire
     {
-        0% {color:rgba(248, 4, 4, 0.775)}
+        0% {color:rgba(248, 4, 4, 0.775);}
         100% {color: #E25822;}
         50% {color: red;}
     }
     .pause:hover
     {
-        background-color: black;
+        font-weight: 600;
         animation-name: fire;
         animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-direction: normal;
-        /*color: #E25822;*/
         transition: 0.5s;
     }
     /*End of div-3*/
@@ -274,14 +273,15 @@
     }
     .lal
     {
-        margin-left: 4vw;
-        margin-right: 4vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
     }
     .lal:hover
     {
-        background: linear-gradient(135deg, deepskyblue 40%, silver 85%);
         border-radius: 60%;
-        transition: 1s;
+        transition: 0.5s;
+        color: red;
+        font-size: 2vw;
     }
     .rs2
     {
