@@ -1,0 +1,286 @@
+<!--Home page-->
+<html>
+<head>
+    <title>Members</title>
+    <link rel="stylesheet" href="Nannapanenicss.css">
+    <style>
+        /*Contents
+            Note : Data in the [] represents a class
+            [profile]
+            -------------------------
+            |           |           |
+            |   [jsk]   |   [data]  |
+            |   IMAGE   |   Name    |
+            |           |   Details |
+            |___________|___________|
+            |                       |
+            |     [Description]     |
+            |      Description      |
+            |                       |
+            |_______________________|
+        */
+        .profile
+        {
+            display: inline-block;
+            margin-right: 8%;
+            margin-left: 8%;
+            width: 44%;
+            margin-top: 5%;
+            height: 22.25rem;
+            width: 30rem;
+            box-shadow: -0.025vw -0.025vw 0.1vw 0.1vw gray;
+            transition: all 0.5s ease-in-out;
+            -webkit-filter: grayscale(80%);
+            filter: grayscale(80%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .profile:hover
+        {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            box-shadow: 0.5vw 0.5vw rgb(111, 104, 104);
+            transform: translate(-0.5rem, -1rem);
+        }
+        .profile .jsk
+        {
+            width: 12.5rem;
+            height: 10rem;
+            transition: all 0.5s ease-in-out;
+        }
+        .profile .jsk:hover
+        {
+            width: 14rem;
+            height: 12rem;
+            transition: all 0.5s ease-in-out;
+        }
+        .profile .imageblock
+        {
+            width: 49%;
+            display: inline-block;
+            border-right: 1px solid grey;
+        }
+        .profile .data
+        {
+            height: 9rem;
+            width: 15rem;
+            display: inline-block; 
+            width: 48%;
+        }
+        .profile .data span
+        {
+            font-weight: 400;
+            font-size: 1.25vw;
+            color: silver;
+        }
+        .profile .description
+        {
+            width: 100%;
+            border-top: 1px solid grey;
+        }
+    </style>
+</head>
+<script>
+    function openNav() 
+    {
+        document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() 
+    {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+<body>
+    
+    <!--1st division-->
+    <div class="div1">
+
+        <!--Menu block-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><label class="lae">&times;</label></a>
+            <div class="overlay-content">
+                <a href="index.html"><label class="lae">Home</label></a>
+                <a href="About us.html" id="s1"><label class="lae">About us</label></a><br>
+                <a href="Projects.html" id="s1"><label class="lae">Projects</label></a><br>
+                <a href="Contact.html" id="s1"><label class="lae">Contact</label></a><br>
+                <a href="Appointment.html" id="s1"><label class="lae">Apponiment</label></a>
+            </div>
+        </div>
+        <!--End of menu block-->
+
+        <!--Left block-->
+        <div id="il">
+            <p align="right" style="color: white;margin-right:25%;"><label class="lae">NANNAPANENI ASSOCIATES</label></p>
+        </div>
+        <!--End of left block-->
+
+        <!--Right block-->
+        <div id="ir">
+            <button class="openbtn" onclick="openNav()" id="bmenu" style="color:white"><label class="lae">&#9776; Menu</label></button>
+        </div>
+        <!--End of right block-->
+    </div>
+
+    <!--End of 1st division-->
+
+    <!--About us division-->
+    <!--Data division-->
+    <div>
+        <h1><label class="lae">Team members and detailed description</label></h1>
+    </div>
+    <!--End of data division-->
+
+<!--------------------------------------------------------------------The cards division------------------------------------------------------------>
+<center>
+    <div style="height: 170%;width: 100%;margin-top: 5%;">
+        <h1><label class="lae"><u>CONTACT</u></label></h1>
+        <hr width="100%" color="silver">
+        
+        <!--1st profile-->
+        <div class="profile">
+            <div class="imageblock">
+                <!--Image-->
+                <img src="staff3.png" alt="Shankaraiah" class="jsk">
+            </div>
+            <div class="data">
+                <!--Name & details-->
+                <h2>
+                    <label class="lae">N.Shankaraiah</label><br>
+                    <span><label class="lae">Designation</label></span><br>
+                    <span><label class="lae">Manipal University</label></span>
+                </h2>
+            </div>
+            <div class="description">
+                    <!--Description-->
+                    Cheif Architect & designer
+            </div>
+        </div>
+        <!--End of 1st profile-->
+
+        <!--2nd profile-->
+        <div class="profile">
+            <div class="imageblock">
+                <!--Image-->
+                <img src="staff2.png" alt="Swaroop" class="jsk">
+            </div>
+            <div class="data">
+                <!--Name & details-->
+                <h2>
+                    <label class="lae">K.Swaroop</label><br>
+                    <span><label class="lae">Designation</label></span><br>
+                    <span><label class="lae">Education</label></span><br>
+                </h2>
+            </div>
+            <div class="description">
+                    <!--Description-->
+                    Cheif Architect & designer
+            </div>
+        </div>
+        <!--End of 2nd profile-->
+
+        <!--1st profile-->
+        <div class="profile">
+            <div class="imageblock">
+                <!--Image-->
+                <img src="staff.png" alt="Shankaraiah" class="jsk">
+            </div>
+            <div class="data">
+                <!--Name & details-->
+                <h2>
+                    <label class="lae">Name</label><br>
+                    <span><label class="lae">Designation</label></span><br>
+                    <span><label class="lae">Education</label></span><br>
+                </h2>
+            </div>
+            <div class="description">
+                    <!--Description-->
+                    Description
+            </div>
+        </div>
+        <!--End of 1st profile-->
+
+        <!--2nd profile-->
+        <div class="profile">
+            <div class="imageblock">
+                <!--Image-->
+                <img src="staff.png" alt="Swaroop" class="jsk">
+            </div>
+            <div class="data">
+                <!--Name & details-->
+                <h2>
+                    <label class="lae">Name</label><br>
+                    <span><label class="lae">Designation</label></span><br>
+                    <span><label class="lae">Education</label></span><br>
+                </h2>
+            </div>
+            <div class="description">
+                    <!--Description-->
+                    Description
+            </div>
+        </div>
+        <!--End of 2nd profile-->
+        <hr width="100%" color="silver" style="margin-top: 3%;margin-bottom: 3%;">
+    </div>
+</center>
+<!-----------------------------------------------------------------End of the cards division--------------------------------------------------------->
+    
+<!--Last block-->
+    <div id="last">
+        <!--Division-1-->
+        <div id="ls1">
+
+            <p class="ps1"><strong class="rs1">
+                            <label class="lae">HEADQUATERS</label><br><br>
+                            1<sup>st</sup>Floor, Flatno:2
+                            Kamalesh Grand
+                            Laxmipuram,
+                            Guntur - 522007
+                            Andhra pradesh
+
+
+
+            </strong></p>
+        </div>
+        <!--End of 1st division-->
+
+        <!--Division-2-->
+        <div id="ls2">
+            <p class="ps1">
+
+
+
+
+
+        <label class="lae">LOCATION</label>
+
+        <a href="https://goo.gl/maps/xMCu7wUr6JUnzeBq9"target="_blank"><img src="planofloacality.png" class="client"></a>
+    
+
+            </p>
+        </div>
+        <!--End of the 2nd division-->
+
+        <!--Division-3-->
+        <div id="ls3">
+            <p class="ps1">
+
+            <label class="lae">INFO</label><br><br>
+            Phone : <strong class="rs2">9440260002</strong>
+            phone : <strong class="rs2">9440859424</strong>
+            Mail     : <strong class="rs2">Nassoci1995@gmail.com</strong>
+
+
+
+
+
+            </p>
+        </div>
+        <!--End of the 3rd division-->
+        <hr style="border: 0.2px solid darkgrey;width: 90%;">
+        <table style="width: 100%;">
+            <tr><td id="lst" style="text-indent: 14%;"><label class="lae">©2023 Nannapaeni Associates</label>
+                <td id="lst" style="text-align: right;white-space: pre;"><label class="lae">Linkedin</label>    <label class="lae">Glassdoor</label>                                   </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
