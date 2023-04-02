@@ -1,13 +1,33 @@
-<!--About us page-->
+<!--Home page-->
 <html>
 <head>
-    <title>Nannapanei Associates</title>
+    <title>About us</title>
     <link rel="stylesheet" href="Nannapanenicss.css">
     <style>
+        /*Contents
+            Note : Data in the [] represents a class
+            [profile]
+            -------------------------
+            |         [jsk]         |
+            |         IMAGE         |
+            |_______________________|
+            |                       |
+            |         [Data]        |
+            |     Name & details    |
+            |                       |
+            |_______________________|
+            |         [Shen]        |
+            |        Contact        |
+            |_______________________|
+        */
         .profile
         {
+            margin-top: 2%;
+            margin-right: 4%;
+            margin-left: 4%;
+            display: inline-block;
+            width: 24%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-top: 5%;
             height: 22.25rem;
             width: 15rem;
             box-shadow: -0.025vw -0.025vw 0.1vw 0.1vw gray;
@@ -22,21 +42,16 @@
             box-shadow: 0.5vw 0.5vw rgb(111, 104, 104);
             transform: translate(-0.5rem, -1rem);
         }
-        .profile .shen:hover
+        .profile .jsk
         {
-            background-color: black;
+            width: 12.5rem;
+            height: 10rem;
             transition: all 0.5s ease-in-out;
         }
         .profile .jsk:hover
         {
             width: 14rem;
             height: 12rem;
-            transition: all 0.5s ease-in-out;
-        }
-        .profile .jsk
-        {
-            width: 12.5rem;
-            height: 10rem;
             transition: all 0.5s ease-in-out;
         }
         .profile .data
@@ -62,6 +77,11 @@
             color: white;
             font-size: 1.5vw;
             text-decoration: none;
+        }
+        .profile .shen:hover
+        {
+            background-color: black;
+            transition: all 0.5s ease-in-out;
         }
     </style>
 </head>
@@ -105,7 +125,9 @@
         </div>
         <!--End of right block-->
     </div>
-    
+
+    <!--End of 1st division-->
+
     <!--About us division-->
     <!--Data division-->
     <div>
@@ -113,14 +135,14 @@
     </div>
     <!--End of data division-->
 
-    <!--------------------------------------------------------------------The cards division------------------------------------------------------------>
+<!--------------------------------------------------------------------The cards division------------------------------------------------------------>
 <center>
-    <div style="height: 140%;width: 100%;margin-top:5%;">
+<div style="height: 140%;width: 100%;margin-top: 5%;">
         <h1><label class="lae"><u>OUR TEAM</u></label></h1>
         <hr width="100%" color="silver">
-    <div style="display: inline-block;width: 24%;">
+    <!--Profile-->
     <div class="profile" align="center">
-            <img src="staff3.png" alt="pro1" class="jsk">
+        <img src="staff3.png" alt="pro1" class="jsk">
         <div class="data">
             <h2>
                 <label class="lae">N.Shankaraiah</label><br>
@@ -129,55 +151,61 @@
             </h2>
         </div>
         <div class="shen">
-            <a href="Aboutus.html"><label class="lae">Contact</label></a>
+            <a href="About us.html"><label class="lae">Contact</label></a>
         </div>
     </div>
+    <!--End of profile-1-->
+
+    <!--Profile-2-->
+    <div class="profile" align="center">
+        <img src="staff2.png" alt="pro1" class="jsk">
+        <div class="data">
+            <h2><label class="lae">K.Swaroop</label><br>
+            <span><label class="lae">Designation</label></span><br>
+            <span><label class="lae">Education</label></span>
+            </h2>
+        </div>
+        <div class="shen">
+            <a href="About us.html"><label class="lae">Contact</label></a>
+        </div>
     </div>
-    <div style="display: inline-block;width: 24%;">
-        <div class="profile" align="center">
-                <img src="staff2.png" alt="pro1" class="jsk">
-            <div class="data">
-                <h2><label class="lae">K.Swaroop</label><br>
-                <span><label class="lae">Designation</label></span>
-                </h2>
-            </div>
-            <div class="shen">
-                <a href="Aboutus.html"><label class="lae">Contact</label></a>
-            </div>
+    <!--End of profile-2 -->
+
+    <!--profile-3 -->
+    <div class="profile" align="center">
+        <img src="staff.png" alt="pro1" class="jsk">
+        <div class="data">
+            <h2><label class="lae">Name</label><br>
+                <span><label class="lae">Designation</label></span><br>
+                <span><label class="lae">Education</label></span>
+            </h2>
         </div>
+        <div class="shen">
+            <a href="About us.html"><label class="lae">Contact</label></a>
         </div>
-        <div style="display: inline-block;width: 24%;">
-            <div class="profile" align="center">
-                    <img src="staff.png" alt="pro1" class="jsk">
-                <div class="data">
-                    <h2><label class="lae">Name</label><br>
-                        <span><label class="lae">Designation</label></span>
-                    </h2>
-                </div>
-                <div class="shen">
-                    <a href="Aboutus.html"><label class="lae">Contact</label></a>
-                </div>
-            </div>
-            </div>
-            <div style="display: inline-block;width: 24%;">
-                <div class="profile" align="center">
-                        <img src="staff.png" alt="pro1" class="jsk">
-                    <div class="data">
-                        <h2><label class="lae">Name</label><br>
-                            <span><label class="lae">Designation</label></span>
-                        </h2>
-                    </div>
-                    <div class="shen">
-                        <a href="Aboutus.html"><label class="lae">Contact</label></a>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <!--end of Profile-3 -->
+
+    <!--Profile-4 -->
+    <div class="profile" align="center">
+        <img src="staff.png" alt="pro1" class="jsk">
+        <div class="data">
+            <h2><label class="lae">Name</label><br>
+                <span><label class="lae">Designation</label></span><br>
+                <span><label class="lae">Education</label></span>
+            </h2>
+        </div>
+        <div class="shen">
+            <a href="About us.html"><label class="lae">Contact</label></a>
+        </div>
+    </div>
+    <!--End of profile-4 -->
         <hr width="100%" style="margin-top: 2%;" color="silver">
-    </div>
+</div>
     </center>
 <!-----------------------------------------------------------------End of the cards division--------------------------------------------------------->
-
-    <!--Last block-->
+    
+<!--Last block-->
     <div id="last">
         <!--Division-1-->
         <div id="ls1">
@@ -231,7 +259,7 @@
         <!--End of the 3rd division-->
         <hr style="border: 0.2px solid darkgrey;width: 90%;">
         <table style="width: 100%;">
-            <tr><td id="lst" style="text-indent: 14%;"><label class="lae">&#169;2023 Nannapaeni Asscociates</label>
+            <tr><td id="lst" style="text-indent: 14%;"><label class="lae">©2023 Nannapaeni Associates</label>
                 <td id="lst" style="text-align: right;white-space: pre;"><label class="lae">Linkedin</label>    <label class="lae">Glassdoor</label>                                   </td>
             </tr>
         </table>
