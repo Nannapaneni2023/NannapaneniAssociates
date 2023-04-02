@@ -3,9 +3,11 @@
 <head>
     <title>Nannapaeni Associates</title>
     <link rel="stylesheet" href="Nannapanenicss.css">
+    <link rel="stylesheet" href="counter.css">
 </head>
 
 <script>
+    //Menu script
     function openNav() 
     {
         document.getElementById("myNav").style.width = "100%";
@@ -14,8 +16,45 @@
     {
         document.getElementById("myNav").style.width = "0%";
     }
+    //End of the Menu script
 
-    //Image works
+    //Counter script
+    function loader(s1,s2,s3)
+    {
+        for(a=0;a<3;a++)
+        {
+            if(a==0)
+                revit(s1,a);
+            else if(a==1)
+                revit(s2,a);
+            else if(a==2)
+                revit(s3,a);
+        }
+        function revit(p,t)
+        {
+            let i = 0;
+            while (i<p) 
+            {
+                loop(i,t);
+                i++
+            }
+        }
+        function loop(i,t)
+        {
+            setTimeout(function()
+            {
+                if(t==0)
+                    document.getElementById('year1').value=i;
+                else if(t==1)
+                    document.getElementById('year2').value=i;
+                else if(t==2)
+                    document.getElementById('year3').value=i;
+            }, 18*i);
+        }
+    }
+    //End of the Counter script
+
+    //Image works script
     var prev;
     var next;
     var i=1;
@@ -54,9 +93,10 @@
         clearInterval(next);
         clearInterval(prev);
     }
+    //End of the Image works script
 </script>
 
-<body>
+<body onload="loader(29,41,61)">
     <!--1st division-->
     <div class="div1">
 
@@ -97,8 +137,37 @@
         </table>
         <img src="housersv4.jpg" alt="Nanapaeni" style="width: 100%;margin-top: 2%;" align="center">
     </div>
+    <hr color="silver" width="100%" height="1px" style="margin-top: 2%;">
     <!--End of 2nd division-->
 
+    <!--Counter division-->
+    <div class="counter">
+        <center>
+        <h1><label class="lae" style="font-family:'Times New Roman';font-weight: 450;font-size: 3vw;"><u>Track record</u></label></h1>
+        <div class="timer">
+            <form style="font-family: 'Times New Roman';font-weight: 300;">
+                <input type="number" id="year1" onclick="loader(29,41,61)" readonly></input>
+            </form>
+            <label>Years of experience</label><br>
+            <label>Driven with passion</label>
+        </div>
+        <div class="timer">
+            <form>
+                <input type="number" id="year2" onclick="loader(29,41,61)" readonly></input>
+            </form>
+            <label>Lac square feet</label><br>
+            <label>Delivery track record</label>
+        </div>
+        <div class="timer">
+            <form>
+                <input type="number" id="year3" onclick="loader(29,41,61)" readonly></input>
+            </form>
+            <label>Lac square feet</label><br>
+            <label>Project under construction</label>
+        </div>
+        </center>
+    </div>
+    <!--End of the counter division-->
 
     <!--3rd division-->
     <div id="di3">
@@ -112,9 +181,11 @@
         <table class="rup2">
             <tr align="center">
             <td style="width: 5%;" colspan="3">
+                <!--<button type="button" onclick="moveprecycle()"><img src="left.png" class="lal"></button>-->
                 <button type="button" onclick="moveprecycle()"><strong class="lal">&#10094;&#10094;</strong></button>
                 <button type="button" onclick="destroyer()" class="pause">Pause</button>
                 <button type="button" onclick="movenextcycle()"><strong class="lal">&#10095;&#10095;</strong></button>
+                <!--<button type="button" onclick="movenextcycle()"><img src="right.png" class="lal"></button>-->
             </td></tr>
         </table>
     </div>
