@@ -11,5 +11,6 @@
     Number  : $num
     Mail id : $mail 
     val;
-    echo "$data";
+    header("Location: index.html");
+	exit;
 ?>
