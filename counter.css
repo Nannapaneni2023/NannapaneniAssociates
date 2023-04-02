@@ -1,0 +1,62 @@
+.counter
+    {
+        margin-top: 4%;
+        margin-bottom: 10%;
+        width: 100%;
+        height: 45%;
+        border: 1px solid ghostwhite;
+    }
+    .timer
+    {
+        margin-top: 2%;
+        margin-left: 4%;
+        margin-right: 7%;
+        background-color: white;
+        color: black;
+        display: inline-block;
+        height: 80%;
+        width: 20%;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-indent: 1vw;
+        text-align: left;
+        font-size: 1.5vw;
+        transition: all 0.25s ease-in-out;
+        box-shadow: -0.01vw -0.01vw 0.05vw 0.05vw rgb(195, 187, 187);
+    }
+    .timer:hover
+    {
+        transition: all 0.25s ease-in-out;
+        box-shadow: 0.2vw 0.2vw 0.5vw 0.5vw silver;
+        transform: translate(0rem, -0.5rem);
+    }
+    .timer input
+    {
+        font-family: nunito;
+        border: none;
+        text-indent: 2vw;
+        margin-bottom: -2%;
+        color: black;
+        background-color: white;
+        height: 6vw;
+        width: 10vw;
+        text-align: left;
+        font-size: 4vw;
+    }
+    .timer label
+    {
+        margin-left: 3%;
+        text-indent: 20%;
+        margin-top: -4%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
+    }
+    .timer label:hover
+    {
+        color: red;
+        transition: all 1s ease-in-out;
+    }
+    .marker form
+    {
+        margin-bottom: -4%;
+    }
