@@ -1,0 +1,42 @@
+    .rem
+    {
+        height: 90%;
+        width: 100%;
+    }
+    .procontainer 
+    {
+        display: inline-block;
+        margin-top: 5%;
+        position: relative;
+        font-family: Arial;
+        width: 40%;
+        margin-left: 4%;
+        margin-right: 4%;
+        transition: all 0.5s ease-in-out;
+        color: silver;
+    }
+    .procontainer:hover
+    {
+        color: white;
+        /*margin-left: 3%;
+        margin-right: 3%;*/
+        width: 42%;
+        box-shadow: .1vw .1vw .5vw .5vw silver;
+        transition: all 0.5s ease-in-out;
+        /*transform: translate(-0.0rem, -2rem);*/
+    }
+    .text-block 
+    {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+    .text-block:hover
+    {
+        color: red;
+        transition: all 0.5s ease-in-out;
+    }
