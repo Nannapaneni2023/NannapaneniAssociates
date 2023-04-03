@@ -1,0 +1,79 @@
+/*Contents
+    Note : Data in the [] represents a class
+    [profile]
+    -------------------------
+    |         [jsk]         |
+    |         IMAGE         |
+    |_______________________|
+    |                       |
+    |         [Data]        |
+    |     Name & details    |
+    |                       |
+    |_______________________|
+    |         [Shen]        |
+    |        Contact        |
+    |_______________________|
+    */
+    .profile
+    {
+        margin-top: 2%;
+        margin-right: 4%;
+        margin-left: 4%;
+        display: inline-block;
+        width: 24%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 22.25rem;
+        width: 15rem;
+        box-shadow: -0.025vw -0.025vw 0.1vw 0.1vw gray;
+        transition: all 0.5s ease-in-out;
+        -webkit-filter: grayscale(80%);
+        filter: grayscale(80%);
+    }
+    .profile:hover
+    {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        box-shadow: 0.5vw 0.5vw rgb(111, 104, 104);
+        transform: translate(-0.5rem, -1rem);
+    }
+    .profile .jsk
+    {
+        width: 12.5rem;
+        height: 10rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .profile .jsk:hover
+    {
+        width: 14rem;
+        height: 12rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .profile .data
+    {
+        height: 9rem;
+        width: 15rem;
+    }
+    .profile .data span
+    {
+        font-weight: 400;
+        font-size: 1.25vw;
+        color: silver;
+    }
+    .profile .shen
+    {
+        width: 15rem;
+        height: 2rem;
+        color: silver;
+        background-color: silver;
+    }
+    .profile .shen a
+    {
+        color: white;
+        font-size: 1.5vw;
+        text-decoration: none;
+    }
+    .profile .shen:hover
+    {
+        background-color: black;
+        transition: all 0.5s ease-in-out;
+    }
