@@ -1,0 +1,157 @@
+<!--Completed projects panel-->
+<html>
+    <head>
+        <title>Nannapaeni Associates</title>
+        <link rel="stylesheet" href="Nannapanenicss.css">
+        <link rel="stylesheet" href="counter.css">
+    </head>
+    <script>
+        //Menu script
+        function openNav() 
+        {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() 
+        {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        //End of the Menu script
+    
+        //Image works script
+        var prev;
+        var next;
+        var i=1;
+        function movepre()
+        {
+            i=i-1;
+            if(i<0)
+                i=3;
+                changeimages();
+        }
+        function movenext()
+        {
+            i=i+1;
+            if(i>3)
+                i=0;
+                changeimages();
+        }
+        function changeimages()
+        {
+            document.getElementById("backgr0").src=(i+0)+".jpg";
+            document.getElementById("backgr1").src=(i+1)+".jpg";
+            document.getElementById("backgr2").src=(i+2)+".jpg";
+        }
+        function moveprecycle()
+        {
+            destroyer();
+            prev = setInterval("movepre()","2000");
+        }
+        function movenextcycle()
+        {
+            destroyer();
+            next = setInterval("movenext()","2000");
+        }
+        function destroyer()
+        {
+            clearInterval(next);
+            clearInterval(prev);
+        }
+        //End of the Image works script
+    </script>
+<body>
+    <!--1st division-->
+    <div class="div1">
+
+        <!--Menu block-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><label class="lae">&times;</label></a>
+            <div class="overlay-content">
+                <a href="index.html"><label class="lae">Home</label></a>
+                <a href="Aboutus.html" id="s1"><label class="lae">About us</label></a><br>
+                <a href="Projects.html" id="s1"><label class="lae">Projects</label></a><br>
+                <a href="Contact.html" id="s1"><label class="lae">Contact</label></a><br>
+                <a href="Appointment.html" id="s1"><label class="lae">Apponiment</label></a>
+            </div>
+        </div>
+        <!--End of menu block-->
+
+        <!--Left block-->
+        <div id="il">
+            <p align="right" style="color: white;margin-right:25%;"><label class="lae">NANNAPANENI ASSOCIATES</label></p>
+        </div>
+        <!--End of left block-->
+
+        <!--Right block-->
+        <div id="ir">
+            <button class="openbtn" onclick="openNav()" id="bmenu" style="color:white"><label class="lae">&#9776; Menu</label></button>
+        </div>
+        <!--End of right block-->
+    </div>
+    <!--End of 1st division-->
+
+    <div style="height:90%">
+        Ongoing projects<br>
+        Work In Progress !
+    </div>
+
+    <!--Last block-->
+    <div id="last">
+        <!--Division-1-->
+        <div id="ls1">
+
+            <p class="ps1"><strong class="rs1">
+                            <label class="lae">HEADQUATERS</label><br><br>
+                            1<sup>st</sup>Floor, Flatno:2
+                            Kamalesh Grand
+                            Laxmipuram,
+                            Guntur - 522007
+                            Andhra pradesh
+
+
+
+            </strong></p>
+        </div>
+        <!--End of 1st division-->
+
+        <!--Division-2-->
+        <div id="ls2">
+            <p class="ps1">
+
+
+
+
+
+        <label class="lae">LOCATION</label>
+
+        <a href="https://goo.gl/maps/xMCu7wUr6JUnzeBq9"target="_blank"><img src="planofloacality.png" class="client"></a>
+    
+
+            </p>
+        </div>
+        <!--End of the 2nd division-->
+
+        <!--Division-3-->
+        <div id="ls3">
+            <p class="ps1">
+
+            <label class="lae">INFO</label><br><br>
+            Phone : <strong class="rs2">9440260002</strong>
+            phone : <strong class="rs2">9440859424</strong>
+            Mail     : <strong class="rs2">Nassoci1995@gmail.com</strong>
+
+
+
+
+
+            </p>
+        </div>
+        <!--End of the 3rd division-->
+        <hr style="border: 0.2px solid darkgrey;width: 90%;">
+        <table style="width: 100%;">
+            <tr><td id="lst" style="text-indent: 14%;"><label class="lae">&#169;2023 Nanapaeni Asscociates</label>
+                <td id="lst" style="text-align: right;white-space: pre;"><label class="lae">Linkedin</label>    <label class="lae">Glassdoor</label>                                   </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
