@@ -1,0 +1,184 @@
+<!--Completed projects panel-->
+<html>
+    <head>
+        <title>Nannapaeni Associates</title>
+        <link rel="stylesheet" href="Nannapanenicss.css">
+        <link rel="stylesheet" href="projectcss.css">
+        <link rel="stylesheet" href="allprojectscss.css">
+    </head>
+    <script>
+        //Menu script
+        function openNav() 
+        {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() 
+        {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        //End of the Menu script
+    </script>
+
+    <!--Script to Manipulate the view of projects-->
+    <script>
+        //Function to manipulate the view of projects
+        function setVisibility1(id1,id2) 
+        {
+            if(document.getElementById('bt1').value=='All')
+            {
+                document.getElementById(id1).style.display = 'inline';
+                document.getElementById(id2).style.display = 'inline';
+            }
+        }
+        function setVisibility2(id1,id2)
+        {
+            if(document.getElementById('bt2').value=='Completed')
+            {
+                document.getElementById(id1).style.display='inline';
+                document.getElementById(id2).style.display='none';
+            }
+        }
+        function setVisibility3(id1,id2)
+        {
+            if(document.getElementById('bt3').value=='Ongoing')
+            {
+                document.getElementById(id1).style.display='none';
+                document.getElementById(id2).style.display='inline';
+            }
+        }
+    </script>
+<body>
+    <!--1st division-->
+    <div class="div1">
+
+        <!--Menu block-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><label class="lae">&times;</label></a>
+            <div class="overlay-content">
+                <a href="index.html"><label class="lae">Home</label></a>
+                <a href="Aboutus.html" id="s1"><label class="lae">About us</label></a><br>
+                <a href="Projects.html" id="s1"><label class="lae">Projects</label></a><br>
+                <a href="Contact.html" id="s1"><label class="lae">Contact</label></a><br>
+                <a href="Appointment.html" id="s1"><label class="lae">Apponiment</label></a>
+            </div>
+        </div>
+        <!--End of menu block-->
+
+        <!--Left block-->
+        <div id="il">
+            <p align="right" style="color: white;margin-right:25%;"><label class="lae">NANNAPANENI ASSOCIATES</label></p>
+        </div>
+        <!--End of left block-->
+
+        <!--Right block-->
+        <div id="ir">
+            <button class="openbtn" onclick="openNav()" id="bmenu" style="color:white"><label class="lae">&#9776; Menu</label></button>
+        </div>
+        <!--End of right block-->
+    </div>
+    <!--End of 1st division-->
+
+    <div class="replica">
+        <input type=button name=type id='bt1' value='All' onclick="setVisibility1('done','ongoing')">
+        <input type=button name=type id='bt2' value='Completed' onclick="setVisibility2('done','ongoing')">
+        <input type=button name=type id='bt3' value='Ongoing' onclick="setVisibility3('done','ongoing')">
+        <br>
+        <!--Projects-->
+        <center>
+        <div id="done">
+            <div class="procontainer">
+                <a href="allprojects.html"><img src="completed.jpg" alt="Nature" style="width:100%;" class="repit"></a>
+                <div class="text-block">
+                  <h2>Project-1</h2>
+                  <p>Status : Completed</p>
+                </div>
+            </div>
+            <div class="procontainer">
+                <a href="allprojects.html"><img src="ongoing.jpg" alt="Nature" style="width:100%;" class="repit"></a>
+                <div class="text-block">
+                  <h2>Project-2</h2>
+                  <p>Status : Completed</p>
+                </div>
+            </div>
+        </div> 
+        <div id="ongoing">
+            <div class="procontainer">
+                <a href="allprojects.html"><img src="completed.jpg" alt="Nature" style="width:100%;" class="repit"></a>
+                <div class="text-block">
+                  <h2>Project-3</h2>
+                  <p>Status : Ongoing</p>
+                </div>
+            </div>
+            <div class="procontainer">
+                <a href="allprojects.html"><img src="ongoing.jpg" alt="Nature" style="width:100%;" class="repit"></a>
+                <div class="text-block">
+                  <h2>Project-4</h2>
+                  <p>Status : Ongoing</p>
+                </div>
+            </div>
+        </div>
+        </center>
+        <!--End of projects block-->
+    </div>
+
+    <!--Last block-->
+    <div id="last">
+        <!--Division-1-->
+        <div id="ls1">
+
+            <p class="ps1"><strong class="rs1">
+                            <label class="lae">HEADQUATERS</label><br><br>
+                            1<sup>st</sup>Floor, Flatno:2
+                            Kamalesh Grand
+                            Laxmipuram,
+                            Guntur - 522007
+                            Andhra pradesh
+
+
+
+            </strong></p>
+        </div>
+        <!--End of 1st division-->
+
+        <!--Division-2-->
+        <div id="ls2">
+            <p class="ps1">
+
+
+
+
+
+        <label class="lae">LOCATION</label>
+
+        <a href="https://goo.gl/maps/xMCu7wUr6JUnzeBq9"target="_blank"><img src="planofloacality.png" class="client"></a>
+    
+
+            </p>
+        </div>
+        <!--End of the 2nd division-->
+
+        <!--Division-3-->
+        <div id="ls3">
+            <p class="ps1">
+
+            <label class="lae">INFO</label><br><br>
+            Phone : <strong class="rs2">9440260002</strong>
+            phone : <strong class="rs2">9440859424</strong>
+            Mail     : <strong class="rs2">Nassoci1995@gmail.com</strong>
+
+
+
+
+
+            </p>
+        </div>
+        <!--End of the 3rd division-->
+        <hr style="border: 0.2px solid darkgrey;width: 90%;">
+        <table style="width: 100%;">
+            <tr><td id="lst" style="text-indent: 14%;"><label class="lae">&#169;2023 Nanapaeni Asscociates</label>
+                <td id="lst" style="text-align: right;white-space: pre;"><label class="lae">Linkedin</label>    <label class="lae">Glassdoor</label>                                   </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
