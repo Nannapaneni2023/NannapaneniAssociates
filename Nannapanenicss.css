@@ -177,10 +177,11 @@
         opacity: 1;
         margin-bottom: 1vw;
         box-shadow: 1vw 0.75vw 0.75vw  silver;
+        transition: all 0.5s ease-in-out;
     }
     .zx1:hover
     {
-        transition: 1s;
+        transition: all 0.5s ease-in-out;
         width:36vw; 
         height:26vw;
         box-shadow: 0.45vw 0.45vw  silver;
@@ -193,9 +194,11 @@
         margin-bottom: 1vw;
         -webkit-filter: grayscale(50%);
         filter: grayscale(50%);
+        transition: all 0.75s ease-in-out;
     }
     .zx2:hover
     {
+        transition: all 0.75s ease-in-out;
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
         box-shadow: 0.45vw 0.45vw black;
