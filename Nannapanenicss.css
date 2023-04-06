@@ -225,7 +225,7 @@
     {
         color: white;
         background-color: black;
-        height: 60%;
+        height: 65%;
         width: 100%;
         font-size: larger;
     }
@@ -244,6 +244,11 @@
         width: 32%;
         display: inline-block;
         text-align: center;
+    }
+    #ls2 iframe
+    {
+        width: 60%;
+        height: 70%;
     }
     #ls3
     {
