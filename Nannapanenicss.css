@@ -323,7 +323,7 @@
 
 
     /*Scroll bar data*/
-    ::-webkit-scrollbar
+    /*::-webkit-scrollbar
     {
         background-color: #818181;
         width: .5vw;
@@ -335,4 +335,4 @@
     ::-webkit-scrollbar-thumb
     {
         background: linear-gradient(135deg, pink 40%, lavenderblush 85%);
-    }
+    }*/
