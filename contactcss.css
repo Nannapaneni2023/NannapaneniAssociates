@@ -1,16 +1,18 @@
+    body
+    {
+        background-image: url("b5.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     .contactpanel
     {
         margin-top: -3%;
         width: 85%;
         height: 30%;
-        background-color: rgba(24, 23, 23, 0.563);
         color: white;
         font-style:initial;
         font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    .contactpanel:hover
-    {
-        box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw black;
+        transition: all 0.5s ease-in-out;
     }
     .contactpanel h1
     {
@@ -42,6 +44,7 @@
     }
     .holder
     {
+        position:relative;
         margin-top: 5%;
         height:90%;
     }
@@ -50,8 +53,10 @@
         display: inline-block;
         height: 50%;
         width: 22.5%;
+        margin-top: 6%;
         margin-left: 3%;
         margin-right: 3%;
+        background-color: white;
         box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw silver;
         transition: all 0.3s ease-in-out;
     }
