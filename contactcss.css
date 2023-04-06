@@ -1,0 +1,73 @@
+    .contactpanel
+    {
+        margin-top: -3%;
+        width: 85%;
+        height: 30%;
+        background-color: rgba(24, 23, 23, 0.563);
+        color: white;
+        font-style:initial;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .contactpanel:hover
+    {
+        box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw black;
+    }
+    .contactpanel h1
+    {
+        margin-top: 6%;
+        text-align: center;
+        font-size: 4vw;
+    }
+    .contactpanel span
+    {
+        text-align: center;
+        font-size: 2vw;
+    }
+    .locality
+    {
+        margin-left: 5%;
+        height: 60%;
+        width: 90%;
+    }
+    .mylocation
+    {
+        height: 100%;
+        width: 100%;
+        margin-left: 10%;
+    }
+    .recalltron
+    {
+        height: 40%;
+        width: 100%;
+    }
+    .holder
+    {
+        margin-top: 5%;
+        height:90%;
+    }
+    .contactdata
+    {
+        display: inline-block;
+        height: 50%;
+        width: 22.5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw silver;
+        transition: all 0.3s ease-in-out;
+    }
+    .contactdata:hover
+    {
+        color: red;
+        transform: translate(-0.5rem, -1rem);
+        box-shadow: 0.2vw 0.2vw 0.2vw 0.2vw silver;
+        transition: all 0.3s ease-in-out;
+    }
+    .contactdata img
+    {
+        width: 30%;
+        height: 30%;
+    }
+    .contactdata span
+    {
+        font-size: 1.5vw;
+    }
