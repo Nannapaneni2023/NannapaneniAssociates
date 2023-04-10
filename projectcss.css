@@ -40,3 +40,48 @@
         color: red;
         transition: all 0.5s ease-in-out;
     }
+@media only screen and (max-width: 400px)
+{
+    .rem
+    {
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .procontainer 
+    {
+        display: inline-block;
+        margin-top: 5%;
+        position: relative;
+        font-family: Arial;
+        width: 40%;
+        margin-left: 4%;
+        margin-right: 4%;
+        transition: all 0.5s ease-in-out;
+        color: silver;
+    }
+    .procontainer:hover
+    {
+        width: 42%;
+        box-shadow: .1vw .1vw .5vw .5vw silver;
+        transition: all 0.5s ease-in-out;
+    }
+    .text-block 
+    {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background-color: black;
+        padding-left: 5px;
+        padding-right: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+    .text-block h2, p
+    {
+        font-size: 2vw;
+    }
+    .text-block:hover
+    {
+        color: red;
+        transition: all 0.5s ease-in-out;
+    }
+}

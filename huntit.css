@@ -1,0 +1,36 @@
+    .Locality
+    {
+		display: inline-block;
+        margin-top: 3%;
+        width: 17.5%;
+        height: 75%;
+        margin-left: 2%;
+        margin-right: 2%;
+		box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw silver;
+        transition: all 0.5s ease-in-out;
+    }
+	.Locality:hover
+    {
+		transform: translate(-0.5rem, -1rem);
+        transition: all 0.5s ease-in-out;
+    }
+    .Walk-through
+    {
+        height: 95%;
+        width: 100%;
+        margin-top:2%;
+        margin-bottom: 2%;
+    }
+    .Walk-through iframe
+    {
+        width: 100%;
+        height: 95%;
+    }
+    .vaultWt
+    {
+        width: 80%;
+        height: 80%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw silver;
+    }

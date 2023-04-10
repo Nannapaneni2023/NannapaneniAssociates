@@ -78,7 +78,7 @@
         height: 90%;
         margin-left: 2%;
         margin-right: 2%;
-        box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw silver;
+        box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw silver; 
     }
     .val table
     {
@@ -189,105 +189,3 @@
     {
         font-size: 2vw;
     }
-@media only screen and (max-width: 400px)
-{
-    a
-    {
-        font-size: 1.75vw;
-    }
-    .About
-    {
-        height: 30%;
-    }
-    .res
-    {
-        width: 40%;
-        height: 80%;
-        font-size: 2vw;
-    }
-    .res h1, span
-    {
-        font-size: 2vw;
-    }
-    .Walk-through
-    {
-        height: 100%;
-    }
-    .vaultWt h1 
-    {
-        font-size: 2vw;
-    }
-    .Project-significance
-    {
-        height: 40%;
-    }
-    .val
-    {
-        height: 80%;
-        font-size: 2vw;
-    }
-    .val table
-    {
-        height: 80%;
-        font-size: 1.6vw;
-    }
-    .val th
-    {
-        font-size: 2vw;
-    }
-    .val td
-    {
-        border-bottom: 0.2vw solid silver;
-    }
-    .val2
-    {
-        font-size: 2vw;
-    }
-    .Locality-significance
-    {
-        height: 20%;
-    }
-    .Locality
-    {
-        font-size: 2vw;
-        height: 50%;
-    }
-    .Locality:hover
-    {
-        transform: translate(-4%, -6%);
-    }
-    .Floor-plan
-    {
-        height: 40%;
-        width: 100%;
-    }
-    .Fp
-    {
-        margin-top: 3%;
-        height: 70%;
-        font-size: 2vw;
-    }
-    .Fp:hover
-    {
-        transform: translate(-2%, -2%);
-        transition: all 0.5s ease-in-out;
-    }
-    .Project-Brochure
-    {
-        margin-top: 2%;
-        height: 35%;
-        width: 100%;
-    }
-    .Brochure
-    {
-        margin-top: 2%;
-    }
-    .Brochure:hover
-    {
-        transform: translate(-4%, -4%);
-    }
-    u
-    {
-        font-size: 2vw;
-    }
-}

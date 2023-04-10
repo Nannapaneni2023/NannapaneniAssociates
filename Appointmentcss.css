@@ -1,0 +1,102 @@
+    .height
+    {
+        height:90%
+    }
+    table
+    {
+        width: 35%;
+        border: 1px solid black;
+    }
+    input
+    {
+        text-indent: 5%;
+        width: 85%;
+        height: 1.7vw;
+        width: 22vw;
+    }
+    input:hover
+    {
+        transition: 1s;
+        color: red;
+    }
+    .trk1
+    {
+        text-indent: 25%;
+        width: 30%;
+        font-size: large;
+    }
+    .trk2
+    {
+        width: 70%;
+        font-size: large;
+    }
+    .rfs
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        background: black;
+        color: silver;
+        font-size:x-large;
+    }
+    .rfs:hover
+    {
+        transition: 1s;
+        color: white;
+    }
+    .bu
+    {
+        text-align: center;
+        width: 7vw;
+        padding-right: 0.5vw;
+        padding-left: 0.5vw;
+        background-color: black;
+        color: silver;
+        font-size: 1.2vw;
+        font-weight: 450;
+    }
+    .bu:hover
+    {
+        transition: 1s;
+        background-color: black;
+        color: red;
+    }
+    hr:hover
+    {
+        color: white;
+        transition: 1s;
+    }
+@media only screen and (max-width: 400px)
+{
+    .height
+    {
+        height: 30%;
+    }
+    .height table
+    {
+        width: 40%;
+        border: 1px solid black;
+    }
+    .trk1
+    {
+        text-indent: 25%;
+        width: 30%;
+        font-size: 2vw;
+    }
+    .trk2
+    {
+        width: 70%;
+        font-size: 2vw;
+    }
+    .rfs
+    {
+        font-size:3vw;
+    }
+    .bu
+    {
+        font-size: 1.4vw;
+    }
+    ::placeholder
+    {
+        font-size: 1vw;
+    }
+}

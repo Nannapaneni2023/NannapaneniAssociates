@@ -13,6 +13,12 @@
     |                       |
     |_______________________|
     */
+    .lee
+    {
+        height: 170%;
+        width: 100%;
+        margin-top: 5%;
+    }
     .profile
     {
         display: inline-block;
@@ -71,3 +77,51 @@
         width: 100%;
         border-top: 1px solid grey;
     }
+@media only screen and (max-width: 400px)
+{
+    .lee
+    {
+        height: auto;
+        margin-bottom: 20%;    
+    }
+    .lee h1
+    {
+        font-size: 3vw;
+    }
+    .intro h1
+    {
+        font-size: 3.5vw;
+    }
+    .profile
+    {
+        margin-right: 3%;
+        margin-left: 3%;
+        width: 40%;
+        height: 20%;
+        font-size: 3vw;
+    }
+    .profile span label
+    {
+        font-size: 1.5vw;
+    }
+    .profile .jsk
+    {
+        width: 80%;
+        height: 40%;
+    }
+    .profile .jsk:hover
+    {
+        width: 85%;
+        height: 45%;
+    }
+    .profile .imageblock
+    {
+        width: 48%;
+    }
+    .profile .data
+    {
+        height: 40%;
+        width: 48%;
+        font-size: 1.7vw;
+    }
+}

@@ -69,12 +69,14 @@
     button
     {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: x-large;
+        font-size: large;
         background: none;
         border: none;
     }
     p
     {
+        color: white;
+        margin-right:25%;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: xx-large;
     }
@@ -104,11 +106,11 @@
         margin-top: 2%;
         font-weight: 700;
     }
-    .tab
+    .thetable
     {
         width: 100%;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: x-large;
+        font-size: 2vw;
     }
     @keyframes rs
     {
@@ -327,83 +329,54 @@
         color: white;
     }
 
-
-    /*Scroll bar data*/
-    /*::-webkit-scrollbar
-    {
-        background-color: #818181;
-        width: .5vw;
-    }
-    ::-webkit-scrollbar-track
-    {
-        background: linear-gradient(135deg, deepskyblue 40%, silver 85%);
-    }
-    ::-webkit-scrollbar-thumb
-    {
-        background: linear-gradient(135deg, pink 40%, lavenderblush 85%);
-    }*/
-
-
-@media screen and (max-width: 1200px)
+@media only screen and (max-width: 600px)
 {
-    /*Div-1 Attributes*/
     button
     {
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
     p
     {
-        font-size: 3.5vw;
+        font-size: 2.8vw;
     }
     #il
     {
-        width: 78%;
+        width: 75vw;
     }
-    #im1
+    #ir
     {
-        margin-bottom: -3%;
-    }
-
-    /*Division-2*/
-    .tab
-    {
-        font-size: 2vw;
+        width: 15vw;
     }
 
     /*Div-3*/
     .rup1
     {
-        height: auto;
+        height: 20vh;
     }
     .rup2
     {
-        height: auto;
+        height: 5vh;
     }
     /*End of div-3*/
     
     /*Last div*/
     #last
     {
-        height: auto;
-        font-size: 2vw;
-        padding-bottom: 2%;
+        height: 17vh;
+        font-size: 1vw;
     }
     #ls1
     {
-        margin-left: -8%;
         height: 10vh;
-        width: 29%;
-        text-indent: 30%;
     }
     #ls2
     {
         height: 10vh;
-        width: 29%;
-        margin-left: 2%;
     }
     #ls2 iframe
     {
-        height: 25vh;
+        width: 20vw;
+        height: 5.5vh;
     }
     #ls3
     {
@@ -411,80 +384,10 @@
     }
     .ps1
     {
-        font-size: 1.7vw;
+        font-size: 1.35vw;
     }
-    #lst /*Status : changed*/
+    #lst
     {
-        font-size: 1.7vw;
-    }
-}
-@media only screen and (max-width: 1100px)
-{
-    #ls2 iframe
-    {
-        height: 20vh;
-    }
-}
-@media only screen and (max-width: 1000px)
-{
-    #ls2 iframe
-    {
-        height: 12vh;
-    }
-}
-@media only screen and (max-width: 900px)
-{
-    #ls2 iframe
-    {
-        height: 7vh;
-    }
-}
-@media only screen and (max-width: 800px)
-{
-    #ls2 iframe
-    {
-        height: 9vh;
-    }
-}
-@media only screen and (max-width: 700px)
-{
-    #ls2 iframe
-    {
-        height: 7vh;
-    }
-}
-@media only screen and (max-width: 600px)
-{
-    #ls2 iframe
-    {
-        height: 7vh;
-    }
-}
-@media only screen and (max-width: 500px)
-{
-    #ls2 iframe
-    {
-        height: 7vh;
-    }
-}
-@media only screen and (max-width: 400px)
-{
-    #ls2 iframe
-    {
-        height: 7vh;
-    }
-}
-@media only screen and (max-width: 365px)
-{
-    #ls2 iframe
-    {
-        height: 7.5vh;
-    }
-}
-@media only screen and (max-width: 300px)
-{
-    #ls2 iframe
-    {
-        height: 6vh;
+        font-size:1.5vw;
     }
 }
